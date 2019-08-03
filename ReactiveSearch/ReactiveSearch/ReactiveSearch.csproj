@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="reactiveui" Version="7.4.0" />
-    <PackageReference Include="reactiveui-xamforms" Version="7.4.0" />
-    <PackageReference Include="refit" Version="4.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="reactiveui" Version="9.19.5" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="9.19.5" />
+    <PackageReference Include="refit" Version="4.7.9" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
   </ItemGroup>
 
   <ItemGroup>

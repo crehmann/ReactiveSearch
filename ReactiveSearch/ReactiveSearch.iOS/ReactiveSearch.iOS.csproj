@@ -120,12 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="reactiveui">
-      <Version>7.4.0</Version>
+      <Version>9.19.5</Version>
     </PackageReference>
     <PackageReference Include="refit">
-      <Version>4.0.1</Version>
+      <Version>4.7.9</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

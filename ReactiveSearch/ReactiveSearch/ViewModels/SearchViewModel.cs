@@ -30,7 +30,7 @@ namespace ReactiveSearch.ViewModels
             Search.ThrownExceptions.Subscribe(async ex => await SearchError.Handle("An error occured."));
 
             this.WhenAnyValue(x => x.SearchQuery)
-                .Throttle(TimeSpan.FromMilliseconds(500), TaskPoolScheduler.Default)
+                .Throttle(TimeSpan.FromMilliseconds(300), TaskPoolScheduler.Default)
                 .Do(x => System.Diagnostics.Debug.WriteLine($"Throttle fired for {x}"))
                 .ObserveOn(RxApp.MainThreadScheduler)
                 .InvokeCommand(Search);
@@ -66,15 +66,18 @@ namespace ReactiveSearch.ViewModels
 
         private async Task<List<Station>> SearchAsync(string searchQuery)
         {
-            var searchResult = await _stationSearchApi.Search(searchQuery).ConfigureAwait(false);
+            var searchResult = await _stationSearchApi.SearchAsync(searchQuery).ConfigureAwait(false);
             return searchResult.Stations.ToList();
         }
 
         private IObservable<bool> CanSearch()
             => Observable
                     .CombineLatest(
-                        this.WhenAnyValue(vm => vm.SearchQuery).Select(searchQuery => !string.IsNullOrEmpty(searchQuery)).DistinctUntilChanged(),
-                        this.WhenAnyObservable(x => x.Search.IsExecuting).DistinctUntilChanged(),
+                        this.WhenAnyValue(vm => vm.SearchQuery)
+                            .Select(searchQuery => !string.IsNullOrEmpty(searchQuery))
+                            .DistinctUntilChanged(),
+                        this.WhenAnyObservable(x => x.Search.IsExecuting)
+                            .DistinctUntilChanged(),
                         (hasSearchQuery, isExecuting) => hasSearchQuery && !isExecuting)
                     .Do(cps => System.Diagnostics.Debug.WriteLine($"Can Perform Search: {cps}"))
                     .DistinctUntilChanged();

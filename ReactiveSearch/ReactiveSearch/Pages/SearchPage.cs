@@ -26,7 +26,8 @@ namespace ReactiveSearch.Pages
                     (ActivityIndicator = new ActivityIndicator()),
                     (SearchResults = new ListView {
                         VerticalOptions = LayoutOptions.FillAndExpand,
-                        HorizontalOptions = LayoutOptions.FillAndExpand
+                        HorizontalOptions = LayoutOptions.FillAndExpand,
+                        SelectionMode = ListViewSelectionMode.None
                     })
                 }
             };
