@@ -286,3 +286,7 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# Config Files
+ReactiveSearch/ReactiveSearch.iOS/Config.plist
+ReactiveSearch/ReactiveSearch.Android/Resources/values/Config.xml
