@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">ReactiveSearch.Droid</string>
+  <string name="app_center_api_token">MY_API_KEY</string>
 </resources>
