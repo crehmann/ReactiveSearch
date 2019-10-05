@@ -11,6 +11,7 @@
     <PackageReference Include="reactiveui" Version="10.3.6" />
     <PackageReference Include="ReactiveUI.XamForms" Version="10.3.6" />
     <PackageReference Include="refit" Version="4.7.51" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.3" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
   </ItemGroup>
 
