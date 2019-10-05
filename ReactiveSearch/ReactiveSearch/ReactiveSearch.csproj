@@ -8,10 +8,10 @@
     <PackageReference Include="Microsoft.AppCenter" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
-    <PackageReference Include="reactiveui" Version="9.19.5" />
-    <PackageReference Include="ReactiveUI.XamForms" Version="9.19.5" />
-    <PackageReference Include="refit" Version="4.7.9" />
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
+    <PackageReference Include="reactiveui" Version="10.3.6" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="10.3.6" />
+    <PackageReference Include="refit" Version="4.7.51" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
   </ItemGroup>
 
   <ItemGroup>
