@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>app_center_api_token</key>
-	<string>MY_API_KEY</string>
+	<string>#{APP_CENTER_API_KEY}#</string>
 </dict>
 </plist>
