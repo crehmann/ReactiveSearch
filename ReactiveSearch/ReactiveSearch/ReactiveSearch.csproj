@@ -8,16 +8,9 @@
     <PackageReference Include="Microsoft.AppCenter" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
-    <PackageReference Include="reactiveui" Version="10.4.1" />
+    <PackageReference Include="ReactiveUI" Version="10.4.1" />
     <PackageReference Include="ReactiveUI.XamForms" Version="10.4.1" />
     <PackageReference Include="refit" Version="4.7.51" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.3" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
-      <DependentUpon>*.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>
